@@ -1,0 +1,14 @@
+<div>
+  <div className ="container">
+    <h1>Verificador de Capicúa</h1>
+    <h2>
+      Ingrese una palabra o número para validar si es Capicúa o Palíndroma
+    </h2>
+    <input [(ngModel)]="palabra" placeholder="Ingresa un número o palabra" />
+    <button (click)="validarCapicua()">Verificar</button>
+
+    @if (resultado !== null) {
+    <p>La palabra o número {{ resultado }}</p>
+    }
+  </div>
+</div>
